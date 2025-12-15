@@ -1,0 +1,11 @@
+# Sample word list for testing FastChatFilter
+# One word per line or comma-separated
+# Lines starting with # are comments
+
+badword
+offensive
+inappropriate
+spam
+test
+hello
+world
