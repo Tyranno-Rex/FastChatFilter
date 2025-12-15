@@ -7,9 +7,14 @@
     <PackageId>FastChatFilter</PackageId>
     <Version>1.0.0</Version>
     <Title>FastChatFilter</Title>
+    <Authors>Tyranno-Rex</Authors>
     <Description>High-performance, zero-allocation profanity filter for .NET. Uses binary trie data structure with Span-based API for maximum performance in game servers and chat systems.</Description>
     <PackageTags>profanity;filter;chat;moderation;trie;performance;span;zero-allocation</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Tyranno-Rex/FastChatFilter</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Tyranno-Rex/FastChatFilter</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
 
     <!-- XML Documentation -->
     <GenerateDocumentationFile>true</GenerateDocumentationFile>

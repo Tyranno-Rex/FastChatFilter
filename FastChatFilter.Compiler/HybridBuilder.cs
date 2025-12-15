@@ -10,6 +10,21 @@ namespace FastChatFilter.Compiler;
 /// </summary>
 internal sealed class HybridBuilder
 {
+    /// <summary>
+    /// Build binary file from CSV input file.
+    /// Convenience method for benchmarking and external use.
+    /// </summary>
+    public static void Build(string csvPath, string outputPath)
+    {
+        var words = CsvReader.ReadWordsAsync(csvPath).GetAwaiter().GetResult();
+        words = words.Select(w => w.ToLowerInvariant()).Distinct().ToList();
+
+        var builder = new HybridBuilder();
+        builder.AddRange(words);
+
+        HybridBinaryWriter.WriteAsync(outputPath, builder).GetAwaiter().GetResult();
+    }
+
     private readonly List<BuilderNode> _nodes = new();
     private readonly HashSet<uint> _hashes = new();
     private readonly List<int> _wordLengths = new();

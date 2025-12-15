@@ -25,6 +25,7 @@
 
   <ItemGroup>
     <InternalsVisibleTo Include="FastChatFilter.Tests" />
+    <InternalsVisibleTo Include="FastChatFilter.Benchmark" />
   </ItemGroup>
 
 </Project>
